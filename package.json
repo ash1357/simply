@@ -99,6 +99,7 @@
   "scripts": {
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
+    "heroku-postbuild": "gatsby build",
     "production": "gatsby clean && gatsby build && gatsby serve",
     "format": "prettier --write src/**/*.{js,jsx,tsx}",
     "start": "npm run develop",
