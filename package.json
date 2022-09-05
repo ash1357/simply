@@ -1,6 +1,9 @@
 {
   "name": "symply-landing-page",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "description": "Symply's Landing Page",
   "version": "1.0.0",
   "author": "Symply",
