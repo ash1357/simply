@@ -1,0 +1,35 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainRowRight {
+    background-color: #E4F1FD;
+}
+
+.mapContainer {
+    margin-bottom: 38px;
+}
+
+@media all and (min-width: 1000px) {
+    .mainContainer {
+        padding-top: 138px;
+    }
+
+    .mainRowLeft {
+        flex: 2;
+        margin-left: 13.7%;
+    }
+
+    .mainRowRight {
+        flex: 1;
+        height: fit-content;
+        padding-top: 37px;
+        padding-left: 35px;
+        padding-bottom: 45px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+
+}

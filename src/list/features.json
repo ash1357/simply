@@ -1,0 +1,42 @@
+{
+  "basicFeatures": [
+    {
+      "title": "Hiring",
+      "name": "hiring",
+      "content": "Create job applications, post jobs & use our applicant tracking system, making it easy to hire in a few clicks.",
+      "perMonth": 100
+    },
+    {
+      "title": "Onboarding",
+      "name": "onboarding",
+      "content": "Paperless employee onboarding. Bring your entire onboarding process online by turning your custom forms like handbooks & contracts into digital documents.",
+      "perMonth": 0,
+      "priceAdditionalText": "w/ Payroll"
+    },
+    {
+      "title": "Payroll",
+      "name": "payroll",
+      "content": "Guided payroll experience that allows you to run payroll in minutes, not hours. 2 simple steps; review & submit.",
+      "perMonth": 39,
+      "perEmployee": 6
+    }
+  ],
+  "addOnFeatures": [
+    {
+      "title": "Additional Payroll Support",
+      "name": "additionalPayrollSupport",
+      "perMonth": 40,
+      "perEmployee": 1.5
+    },
+    {
+      "title": "Labor Law Poster",
+      "name": "laborLawPoster",
+      "perMonth": 10
+    },
+    {
+      "title": "HR on Demand",
+      "name": "hrOnDemand",
+      "perMonth": 50
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+.FAQContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+.FAQCardContainer {
+  width: 100%;
+  min-height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #211e5e;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.FAQIcon {
+  width: 30px;
+  height: auto;
+  margin: 0;
+  margin-right: 12px;
+}
+
+.FAQInquiryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
+.FAQCardInnerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+  transition: 0.3s;
+}
+
+@media all and (min-width: 1000px) {
+  .textDivSM {
+    display: none;
+  }
+
+  .FAQContainer {
+    margin-bottom: 100px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .textDivLG {
+    display: none;
+  }
+
+  .FAQContainer {
+    margin-bottom: 50px;
+  }
+}

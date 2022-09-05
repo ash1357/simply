@@ -1,0 +1,24 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media all and (min-width: 1000px) {
+  .mainContainer {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 138px;
+    padding-bottom: 138px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .mainContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

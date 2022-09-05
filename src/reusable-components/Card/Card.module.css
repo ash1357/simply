@@ -1,0 +1,89 @@
+.mainContainer,
+.footerContainer,
+.learnMoreContainer,
+.additionalTextContainer,
+.bannerContainer {
+  display: flex;
+}
+
+.mainContainer,
+.footerContainer {
+  flex-direction: column;
+}
+
+.learnMoreContainer,
+.additionalTextContainer {
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  border: 1px solid #211e5e;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+  justify-content: space-between;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.learnMoreContainer {
+  margin-top: 1rem;
+}
+
+.additionalTextContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bannerContainer {
+  min-width: 100px;
+  height: 30px;
+  position: relative;
+  background: #ffa500;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.bannerContainer:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.bannerContainer:before {
+  content: '';
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid #ffa500;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+@media all and (min-width: 1000px) {
+  .mainContainer {
+    flex: 1;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .mainContainer {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "target": "ES6",
+    "jsx": "preserve",
+    "lib": [ "es2015", "dom" ],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "allowJs": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/components", "./styles/global.css.d.ts"]
+}

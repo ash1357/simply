@@ -1,0 +1,188 @@
+.mainContainer,
+.headerContainer,
+.innerHeaderContainer,
+.cardsArrayContainer,
+.cardContainer,
+.firstRowContainer,
+.secondRowContainer,
+.thirdRowContainer,
+.thirdRowArrayContainer {
+  display: flex;
+}
+
+.mainContainer,
+.headerContainer,
+.innerHeaderContainer,
+.cardContainer,
+.firstRowContainer,
+.secondRowContainer,
+.thirdRowContainer {
+  flex-direction: column;
+}
+
+.headerContainer,
+.innerHeaderContainer,
+.cardContainer,
+.secondRowContainer,
+.thirdRowContainer {
+  align-items: center;
+}
+
+.headerContainer,
+.cardContainer,
+.secondRowContainer,
+.thirdRowContainer {
+  text-align: center;
+}
+
+.cardsArrayContainer {
+  gap: 2rem;
+}
+
+.cardContainer {
+  background: #e0f5f3;
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.secondRowContainer {
+  background-color: #f0f7fe;
+}
+
+.thirdRowContainer {
+  background-color: #1e245e;
+}
+
+@media all and (min-width: 1000px) {
+  .mainContainer {
+    padding-top: 80px;
+  }
+
+  .innerHeaderContainer {
+    padding-left: 28vw;
+    padding-right: 28vw;
+  }
+
+  .headerContainer {
+    padding-top: 138px;
+    padding-bottom: 38px;
+    background-image: url(../../content/assets/hiring/header/background-desktop.png);
+    background-position: top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 800px;
+  }
+
+  .cardsArrayContainer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .cardContainer {
+    width: 20vw;
+    min-height: 20vw;
+  }
+
+  .firstRowContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 150px;
+    padding-bottom: 125px;
+  }
+
+  .secondRowContainer {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 25%;
+    padding-right: 25%;
+    gap: 3rem;
+    background-size: contain;
+    background-image: url(../../content/assets/hiring/secondRow/background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .thirdRowContainer {
+    gap: 2rem;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .thirdRowArrayContainer {
+    flex-flow: row wrap;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin-top: 3rem;
+    justify-content: space-between;
+  }
+
+  .bottomBannerContainer {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .cardContainerLG {
+    position: relative;
+    top: 150px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .headerContainer {
+    background-image: linear-gradient(#61aff8, #211e5e);
+    padding-top: 50px;
+    padding-bottom: 125px;
+  }
+
+  .innerHeaderContainer {
+    gap: 1rem;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .cardsArrayContainer {
+    flex-flow: column wrap;
+  }
+
+  .cardContainerSM {
+    position: relative;
+    bottom: 75px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .firstRowContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+    gap: 2rem;
+  }
+
+  .secondRowContainer {
+    margin-top: 50px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    gap: 1rem;
+    background-size: cover;
+    background-image: url(../../content/assets/hiring/secondRow/background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .thirdRowContainer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    gap: 1rem;
+  }
+
+  .thirdRowArrayContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

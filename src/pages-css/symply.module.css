@@ -1,0 +1,208 @@
+.symplyHeader {
+  background: linear-gradient(
+    -45deg,
+    rgba(39, 12, 80, 1) 0%,
+    rgba(0, 95, 158, 1) 33%,
+    rgba(68, 196, 164, 1) 70%,
+    rgba(68, 196, 164, 1) 100%
+  );
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 25px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.symplyTopContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.symplyHeaderContainer {
+  margin-bottom: 20px;
+}
+.symplyContentContainer {
+  display: flex;
+  justify-content: center;
+}
+.secondRowContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondRowInnerRowLeft,
+.secondRowInnerRowRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.securityComContainer {
+  background-color: #e4f1fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.securityComButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.vimeoStyle {
+  width: 100%;
+}
+
+@media all and (min-width: 1000px) {
+  .symplyTopContainer {
+    padding-top: 138px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .symplyHeaderContainer {
+    margin-top: 80px;
+  }
+  .symplyContentContainer {
+    width: 619px;
+  }
+  .secondRowContainer {
+    padding-left: 6%;
+    padding-right: 6%;
+    align-items: center;
+    padding-bottom: 90px;
+    padding-top: 108px;
+  }
+
+  .secondRowInnerRow,
+  .secondRowInnerRowReverse {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .secondRowInnerRowLeft,
+  .secondRowInnerRowRight {
+    flex: 1;
+  }
+
+  .securityComRowLeft,
+  .securityComRowRight {
+    flex: 1;
+  }
+
+  .securityComRowRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .securityComRowLeft {
+    margin-left: 10%;
+  }
+
+  .symplyHeader {
+    background-size: 100% 70%;
+  }
+
+  .vimeoStyle {
+    height: 468px;
+    margin-bottom: 58px;
+  }
+
+  .securityComContainer {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-bottom: 97px;
+  }
+
+  .securityComButton {
+    margin-top: 16px;
+  }
+
+  .secondRowInnerRowLeft {
+    align-items: flex-start;
+    margin-right: 15px;
+  }
+
+  .secondRowInnerRow,
+  .secondRowInnerRowReverse {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 59px;
+  }
+
+  .secondRowInnerRowReverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .symplyHeader {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 44px;
+  }
+
+  .secondRowInnerRowLeft,
+  .secondRowInnerRowRight {
+    width: 100%;
+  }
+
+  .symplyHeader {
+    background-size: 100% 80%;
+  }
+
+  .securityComContainer {
+    padding-left: 10.625%;
+    padding-right: 10.625%;
+    padding-bottom: 30px;
+    padding-top: 23px;
+    margin-bottom: 27px;
+  }
+
+  .securityComRowRight {
+    display: none;
+  }
+
+  .securityComButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+  }
+
+  .secondRowInnerRow,
+  .secondRowInnerRowReverse {
+    display: flex;
+  }
+
+  .secondRowInnerRow,
+  .secondRowInnerRowReverse {
+    flex-direction: column;
+  }
+
+  .secondRowContainer {
+    padding-bottom: 58px;
+  }
+}
+
+/* Vimeo Styling Below */
+@media all and (min-width: 650px) and (max-width: 1000px) {
+  .vimeoStyle {
+    height: 350px;
+    margin-bottom: 58px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .vimeoStyle {
+    height: 150px;
+    margin-bottom: 30px;
+  }
+}

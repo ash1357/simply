@@ -1,0 +1,47 @@
+.boxStyles {
+  background-image: url(../../../content/assets/symply-success-box.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+}
+
+.innerBoxStyles {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  text-align: center;
+}
+
+.cornerBoxStyles {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  right: -3%;
+  top: 42.5%;
+  transform: scale(0.63);
+}
+
+@media all and (min-width: 1000px) {
+  .boxStyles,
+  .innerBoxStyles {
+    display: flex;
+    flex-direction: column;
+  }
+  .innerBoxStyles {
+    height: 100%;
+  }
+  .boxStyles {
+    transform: scale(1);
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .boxStyles {
+    transform: scale(0.8);
+  }
+}

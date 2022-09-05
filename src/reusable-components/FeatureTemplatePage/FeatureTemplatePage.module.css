@@ -1,0 +1,129 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineFirstStyle,
+.lineSecondStyle {
+  position: absolute;
+  height: 20px;
+  margin: 0;
+}
+
+.lineFirstStyle {
+  width: 45%;
+  right: 50%;
+}
+
+.lineSecondStyle {
+  width: 25%;
+  left: 70%;
+  transform: scaleX(-1);
+}
+
+.firstRowContainer,
+.secondRowContainer {
+  flex-direction: row;
+  display: flex;
+}
+
+.firstRowLeft,
+.firstRowRight,
+.secondRowLeft,
+.secondRowRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.firstRowContainer {
+  margin-top: 62px;
+  margin-bottom: 50px;
+}
+
+.secondRowRight {
+  align-items: flex-end;
+}
+
+.featureResourceContainer {
+  display: none;
+  background-color: #e4f1fd;
+  padding-left: 90px;
+  padding-right: 90px;
+  flex-direction: row;
+  margin-bottom: 108px;
+}
+
+.featureResourceRowLeft {
+  margin-right: 105px;
+}
+
+.featureResourceRowLeft,
+.featureResourceRowRight {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.featureResourceImg {
+  margin: 0;
+}
+
+@media all and (min-width: 1000px) {
+  .headerContainer {
+    padding-top: 150px;
+  }
+
+  .headerImageContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-image: url(../../../content/assets/background-extra.png);
+    padding-top: 62px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    margin-top: 50px;
+  }
+
+  .firstRowContainer,
+  .secondRowContainer {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .firstRowLeft {
+    padding-left: 10%;
+  }
+
+  .secondRowRight {
+    margin-left: 5%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .headerContainer {
+    margin-top: 40px;
+    padding: 2%;
+  }
+
+  .headerImageContainer {
+    margin-top: 25px;
+  }
+
+  .firstRowContainer,
+  .secondRowContainer {
+    padding: 0 5% 0 5%;
+  }
+
+  .firstRowContainer {
+    display: block;
+  }
+
+  .secondRowContainer {
+    flex-direction: column-reverse;
+    display: inline-flex;
+  }
+}

@@ -1,0 +1,31 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.formComponent {
+  margin: 0;
+}
+
+.formInput {
+  width: 100%;
+  border-radius: 5px;
+  font-family: Barlow;
+  height: 46px;
+  margin-top: 18px;
+  border: 0;
+  padding-left: 22px;
+}
+
+@media all and (min-width: 1000px) {
+  .formInput {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .formInput {
+    font-size: 14px;
+  }
+}

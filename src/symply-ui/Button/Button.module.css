@@ -1,0 +1,80 @@
+.buttonPRI,
+.buttonSEC,
+.buttonINV,
+.buttonSECINV {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonPRI:disabled,
+.buttonSEC:disabled,
+.buttonINV:disabled,
+.buttonSECINV:disabled {
+  cursor: not-allowed;
+}
+
+/* Button Primary */
+
+.buttonPRI {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+  filter: brightness(90%);
+  border: 0;
+}
+
+.buttonPRI:hover {
+  filter: brightness(100%);
+}
+
+.buttonPRI:disabled {
+  box-shadow: none;
+  filter: brightness(100%);
+  border: 0;
+}
+
+/* Button Secondary */
+
+.buttonSEC {
+  background-color: white;
+}
+
+.buttonSEC:hover {
+  background-color: #211e5e;
+}
+
+.buttonSEC:disabled {
+  background-color: white;
+}
+
+/* Button Primary Inverse */
+
+.buttonINV {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  background-color: white;
+}
+
+.buttonINV:hover {
+  background-color: #46e9b2;
+}
+
+.buttonINV:disabled {
+  filter: brightness(100%);
+  background-color: white;
+  box-shadow: none;
+  border: 0;
+}
+
+/* Button Secondary Inverse */
+
+.buttonSECINV {
+  background-color: #211e5e;
+  filter: brightness(90%);
+}
+
+.buttonSECINV:hover {
+  filter: brightness(120%);
+}
+
+.buttonSECINV:disabled {
+  background-color: white;
+}

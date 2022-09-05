@@ -1,0 +1,139 @@
+.mainContainer,
+.titleContainer,
+.quoteContainer,
+.testimonialContainerLG,
+.testimonialContainerSM,
+.profileContainer,
+.carouselContainer,
+.profileImageContainer {
+  display: flex;
+}
+
+.mainContainer,
+.testimonialContainerLG,
+.testimonialContainerSM,
+.profileContainer {
+  flex-direction: column;
+}
+
+.mainContainer,
+.profileContainer,
+.profileImageContainer,
+.testimonialContainerLG,
+.testimonialContainerSM {
+  align-items: center;
+}
+
+.mainContainer {
+  padding-top: 41px;
+  padding-bottom: 115px;
+}
+
+.testimonialContainerLG,
+.testimonialContainerSM {
+  width: 100%;
+  border-radius: 4px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 35px;
+  padding-bottom: 37px;
+  margin: 35px 1rem 37px 1rem;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #e4f1fd;
+}
+
+.carouselOuterContainer {
+  width: 100%;
+}
+
+.profileImageContainer {
+  background-color: #e4f1fd;
+  position: absolute;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.carouselIndicator {
+  border: 1px solid #211e5e;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carouselIndicator:hover {
+  box-shadow: 3px 3px 4px rgba(116, 75, 75, 0.5);
+}
+
+.profileContainer {
+  margin-top: 2rem;
+}
+
+@media all and (min-width: 1000px) {
+  .mainContainer {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .titleContainer {
+    margin-bottom: 45px;
+  }
+
+  .carouselContainer {
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
+  .testimonialContainerLG {
+    width: 30%;
+    min-height: 35vh;
+  }
+
+  .testimonialContainerSM {
+    display: none;
+  }
+
+  .profileImageContainer {
+    top: -35px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .carouselIndicator {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .mainContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .carouselContainer {
+    padding-bottom: 50px;
+  }
+
+  .testimonialContainerLG {
+    display: none;
+  }
+
+  .testimonialContainerSM {
+    height: 35vh;
+  }
+
+  .profileImageContainer {
+    top: -25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .carouselIndicator {
+    width: 10px;
+    height: 10px;
+  }
+}

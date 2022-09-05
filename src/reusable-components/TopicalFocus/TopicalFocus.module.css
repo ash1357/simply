@@ -1,0 +1,154 @@
+.firstRowLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.columnListContainer {
+  display: flex;
+  border-bottom: 1px solid #211e5e;
+}
+
+.columnListImage {
+  width: 140px;
+  height: auto;
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.columnListImageContainerLG {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.columnListContentContainer {
+  display: flex;
+}
+
+@media all and (min-width: 1000px) {
+  .firstRowContainer {
+    display: flex;
+    padding-top: 57px;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 85.5px;
+  }
+
+  .firstRowLeft {
+    padding-left: 6%;
+  }
+
+  .firstRowRight {
+    padding-right: 6%;
+  }
+
+  .firstRowLeft,
+  .firstRowRight {
+    flex: 1;
+  }
+
+  .columnListContainer {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    will-change: padding-top, padding-bottom;
+    transition: 0.3s;
+  }
+
+  .columnListContainer:hover {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    background-color: #E4F2FC;
+  }
+
+  .columnListButton {
+    width: 120px;
+    bottom: 60px;
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .columnListButtonContainerSM,
+  .columnListImageContainerSM {
+    display: none;
+  }
+
+  .columnListInnerContainerSM {
+    display: none;
+  }
+
+  .columnListInnerContainerLG {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .firstRowContainer {
+    display: flex;
+    padding-top: 23px;
+    padding-bottom: 56px;
+    padding-left: 3.125%;
+    padding-right: 3.125%;
+  }
+
+  .firstRowLeft,
+  .secondRowLeft {
+    width: 100%;
+  }
+
+  .firstRowRight {
+    display: none;
+  }
+
+  .columnListContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .columnListButton {
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .columnListImageContainerLG,
+  .columnListButtonContainerLG {
+    display: none;
+  }
+
+  .columnListContentContainer,
+  .columnListButtonContainerSM {
+    padding-left: 15px;
+  }
+
+  .columnListImageContainerSM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .columnListInnerContainerLG {
+    display: none;
+  }
+
+  .columnListInnerContainerSM {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,401 @@
+.symplyLogo {
+  width: 183px;
+  height: auto;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    -45deg,
+    rgba(39, 12, 80, 1) 0%,
+    rgba(0, 95, 158, 1) 33%,
+    rgba(68, 196, 164, 1) 70%,
+    rgba(68, 196, 164, 1) 100%
+  );
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 25px;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerContentContainer {
+  margin-bottom: 1.5rem;
+}
+
+.headerTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricingContainer {
+  display: flex;
+  width: 100%;
+}
+
+.pricingContainerLeft,
+.pricingContainerRight {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 33px;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 1px solid #211e5e;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.pricingContainerLeft {
+  padding-top: 50px;
+}
+
+.pricingContainerRight {
+  padding-top: 16px;
+}
+
+.pricingContainerLeft,
+.pricingContainerRight {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.pricingContainerLeft:hover,
+.pricingContainerRight:hover {
+  border-top: 6px solid;
+  opacity: 1;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listView {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.selectBtn {
+  height: 60px;
+  border-radius: 4px;
+  border: 0;
+  width: 100%;
+}
+
+.selectBtn {
+  background-color: #4fd1a5;
+  transition: 0.3s;
+}
+
+.selectBtn:hover {
+  background-color: rgb(64, 173, 137);
+}
+
+.footerTextContainerLG,
+.footerTextContainerSM {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.footerBottomContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.headerFooterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.gridContainer,
+.gridColumn,
+.addOnContainer,
+.addOnGridContainer,
+.symplyProContainer {
+  display: flex;
+}
+
+.gridContainer {
+  width: 100%;
+}
+
+.gridColumn,
+.addOnContainer,
+.symplyProContainer {
+  flex-direction: column;
+}
+
+.symplyProContainer {
+  width: 100%;
+}
+
+.symplyProContainer > div {
+  overflow-x: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.addOnContainer {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.checkboxContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+}
+
+.cardContainer {
+  display: flex;
+}
+
+.featureModal {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: white;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+@media all and (min-width: 1000px) {
+  .headerContainer {
+    background-size: 100% 1000px;
+    padding-top: 100px;
+  }
+
+  .headerContainer,
+  .addOnContainer,
+  .symplyProContainer {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .symplyProContainer {
+    margin-bottom: 100px;
+  }
+
+  .symplyLogoContainer {
+    width: 82%;
+  }
+
+  .symplyLogo {
+    margin-top: 50px;
+    margin-bottom: 138px;
+  }
+
+  .pricingContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+
+  .pricingContainerLeft {
+    margin-right: 23px;
+  }
+
+  .pricingContainerLeft,
+  .pricingContainerRight {
+    min-width: 31.25%;
+    max-width: 40%;
+  }
+
+  .headerTitleContainer {
+    margin-bottom: 20px;
+  }
+
+  .headerContentContainer {
+    display: flex;
+    justify-content: center;
+    width: 619px;
+  }
+
+  .footerTextContainerSM {
+    display: none;
+  }
+
+  .headerFooterContainer {
+    width: 82%;
+  }
+
+  .gridContainer {
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .gridColumn {
+    margin-right: 1.5%;
+  }
+
+  .addOnContainer {
+    align-items: center;
+  }
+
+  .addOnGridContainer {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .symplyLogo {
+    margin-bottom: 64px;
+    margin-top: 35px;
+  }
+
+  .headerContainer {
+    background-size: 100% 700px;
+    padding-top: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .pricingContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    margin-bottom: 50px;
+  }
+
+  .pricingContainerLeft {
+    margin-top: 20px;
+  }
+
+  .pricingContainerLeft,
+  .pricingContainerRight {
+    width: 93.75%;
+  }
+
+  .headerTitleContainer {
+    margin-bottom: 10px;
+  }
+
+  .headerTitleContainer,
+  .headerContentContainer {
+    display: flex;
+    width: 93.75%;
+  }
+
+  .headerContentContainer {
+    justify-content: center;
+  }
+
+  .footerTextContainerLG {
+    display: none;
+  }
+
+  .headerContentContainer {
+    justify-content: flex-start;
+  }
+
+  .headerFooterContainer {
+    width: 93.5%;
+  }
+
+  .symplyLogoContainer {
+    width: 93.5%;
+  }
+
+  .gridContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  .gridColumn {
+    margin-bottom: 25px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .symplyProContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .addOnContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .addOnGridContainer {
+    margin-top: 1rem;
+  }
+}
+
+/* Special Styling for the Add Ons */
+@media all and (min-width: 1200px) {
+  .checkboxContainer {
+    width: 25%;
+  }
+
+  .cardContainer {
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+  .headerContainer {
+    padding-bottom: 2rem;
+  }
+
+  .symplyProContainer > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .featureModal {
+    width: 600px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .addOnGridContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .checkboxContainer {
+    width: 90%;
+  }
+
+  .symplyProContainer > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featureModal {
+    width: 85vw;
+  }
+}

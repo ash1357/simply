@@ -1,0 +1,102 @@
+.headerContainer,
+.categoryContainer,
+.blogContainer,
+.blogGrid,
+.widgetContainer,
+.buttonContainer {
+  display: flex;
+}
+
+.headerContainer,
+.blogGrid {
+  flex-direction: column;
+}
+
+.blogContainer {
+  flex-wrap: wrap;
+}
+
+.blogGrid {
+  border-radius: 4px;
+  border: 1px solid #211e5e;
+  background-color: white;
+  height: 50vh;
+  padding: 2%;
+}
+
+.button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
+
+.widgetContainer {
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  justify-content: center;
+}
+
+@media all and (min-width: 1000px) {
+  .headerContainer {
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 28px;
+  }
+
+  .categoryContainer {
+    justify-content: space-evenly;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 28px;
+  }
+
+  .blogContainer {
+    padding-left: 6%;
+    padding-right: 5%;
+    margin-bottom: 27px;
+  }
+
+  .blogGrid {
+    width: 32%;
+    margin-right: 1%;
+    margin-bottom: 24px;
+  }
+
+  .widgetContainer {
+    margin-top: 37px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 51px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .headerContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .categoryContainer {
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+
+  .blogContainer {
+    padding-left: 3%;
+    padding-right: 2%;
+  }
+
+  .blogGrid {
+    width: 48%;
+    margin-right: 1%;
+    margin-bottom: 19px;
+  }
+}

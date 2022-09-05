@@ -1,0 +1,147 @@
+.bottomBannerContainer {
+  background-color: #005f9e;
+}
+
+.bottomBannerRowLeft,
+.bottomBannerRowRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomBannerNumberContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.bottomBannerNumber {
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailInput,
+.stateInput {
+  width: 100%;
+  border-radius: 5px;
+  font-family: Barlow;
+  font-size: 16px;
+  height: 46px;
+  margin-top: 18px;
+  border: 0;
+  padding-left: 22px;
+}
+
+.stateInput {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.numEmpTitle {
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.numEmpContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.numEmpForm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 335px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.numEmpTitle,
+.numEmpForm,
+.numEmpButtonContainer {
+  flex: 1;
+}
+
+.numEmpButton {
+  height: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0;
+  width: 100%;
+}
+
+.submitButton {
+  height: 46px;
+  background-color: #4fd1a5;
+  margin-top: 22px;
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media all and (min-width: 1000px) {
+  .bottomBannerContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 14%;
+    margin-right: 14%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+
+  .bottomBannerRowLeft,
+  .bottomBannerRowRight {
+    flex: 1;
+  }
+
+  .bottomBannerRowLeft {
+    padding-right: 7.5%;
+  }
+
+  .bottomBannerNumber {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .bottomBannerContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+
+  .bottomBannerRowLeft,
+  .bottomBannerRowRight {
+    width: 100%;
+  }
+
+  .bottomBannerRowLeft {
+      padding-left: 7.5%;
+  }
+
+  .bottomBannerRowRight {
+    padding-top: 30px;
+  }
+
+  .bottomBannerNumber {
+    width: 21px;
+    height: 21px;
+    margin-right: 7.5px;
+  }
+}

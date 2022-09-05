@@ -1,0 +1,19 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media all and (min-width: 1000px) {
+  .mainContainer {
+    height: 55vh;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .mainContainer {
+    height: 40vh;
+  }
+}

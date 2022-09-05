@@ -1,0 +1,33 @@
+{
+  "hiring": [
+    "Create Jobs",
+    "Post Jobs to Job Boards & Social Media",
+    "Export Jobs via QR Code",
+    "Apply via Webform & SMS",
+    "Manage Applications",
+    "Client Support (Phone, Email & Chat)",
+    "Automated Applicant Vetting",
+    "Company Jobs Page"
+  ],
+  "onboarding": [
+    "Employee Profiles & Self-service",
+    "Electronic I-9 & W-4s",
+    "New Hire Reporting",
+    "Company & Employee Documents (Edit PDFs)",
+    "Employee Trainings",
+    "Client Support (Phone, Email & Chat)"
+  ],
+  "payroll": [
+    "Employee Profiles & Self-service",
+    "Electronic I-9 & W-4s",
+    "New Hire Reporting",
+    "Company & Employee Documents (Edit PDFs)",
+    "Employee Trainings",
+    "Client Support (Phone, Email & Chat)",
+    "Data and Demographic Report",
+    "Full-service and Mobile Payroll",
+    "Unlimited Payrolls",
+    "Direct Deposit",
+    "Multiple Locations and Pay Rates"
+  ]
+}

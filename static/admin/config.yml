@@ -1,0 +1,47 @@
+backend:
+  name: github
+  repo: Demerjianm/symply.io
+  
+  
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+  - name: title
+    label: Title
+    folder: content/title
+    create: true
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: label, label: Label }
+      - { name: description, label: Description }
+      - { name: title, label: Title, widget: markdown }
+  - name: body
+    label: Body
+    folder: content/body
+    create: true
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: label, label: Label }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+  - name: images
+    label: Images
+    folder: content/images
+    create: true
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: label, label: Label }
+      - { name: description, label: Description }
+      - { name: images, label: Images, widget: markdown }

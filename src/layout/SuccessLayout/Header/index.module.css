@@ -1,0 +1,52 @@
+.outerContainer,
+.mainContainer,
+.infoColumn {
+  display: flex;
+}
+
+.infoColumn,
+.outerContainer {
+  flex-direction: column;
+}
+
+.mainContainer {
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media all and (min-width: 1000px) {
+  .mainContainer {
+    padding-left: 6%;
+    padding-right: 28.5%;
+    padding-top: 66px;
+    padding-bottom: 99px;
+    margin-top: 80px;
+  }
+
+  .infoColumn {
+    margin-right: 7.5%;
+  }
+  .infoContainer {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .infoContainer {
+    padding-top: 15px;
+    padding-bottom: 10%;
+  }
+
+  .mainContainer {
+    background-color: #b7e3bb;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 10%;
+  }
+
+  .infoColumn {
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "aboutMenu": [
+    {
+      "title": "Why Symply",
+      "link": "/symply"
+    },
+    {
+      "title": "Symply for QSR",
+      "link": "https://pages.symply.io/symply-software"
+    }
+  ],
+  "productsMenu": [
+    {
+      "title": "Hiring",
+      "link": "/products/hiring"
+    },
+    {
+      "title": "Onboarding",
+      "link": "/products/onboarding"
+    },
+    {
+      "title": "Payroll",
+      "link": "/products/payroll"
+    },
+    {
+      "title": "Add-ons & Integrations",
+      "link": "/products/addons"
+    }
+  ],
+  "resourceMenu": [
+    {
+      "title": "Blog",
+      "link": "https://blog.symply.io/"
+    },
+    {
+      "title": "Guides & Templates",
+      "link": "https://blog.symply.io/resources"
+    },
+    {
+      "title": "Support Center",
+      "link": "https://support.symply.io/"
+    },
+    {
+      "title": "Success Stories",
+      "link": "/resources/successstories/jackinbox"
+    }
+  ]
+}

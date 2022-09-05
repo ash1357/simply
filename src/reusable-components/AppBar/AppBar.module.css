@@ -1,0 +1,305 @@
+.logoContainer,
+.menuDiv,
+.menuPopupContainer,
+.menuDivSM,
+.menuDivBtnContainer,
+.shoppingCartMainContainer,
+.shoppingCartLoadingContainer,
+.shoppingCartAddOnsContainer,
+.shoppingCartButtonText,
+.shoppingCartAddOnsLeftContainer,
+.shoppingCartDeleteButtonContainer,
+.shoppingCartButtonContainer,
+.shoppingCartHeader,
+.mobileMenuMainContainer,
+.mobileMenuContentContainer,
+.mobileMenuFooterContainer,
+.McAffeeLogoDiv {
+  display: flex;
+}
+
+.logoContainer,
+.menuDiv,
+.menuDivSM,
+.shoppingCartLoadingContainer,
+.shoppingCartButtonText,
+.shoppingCartButtonContainer,
+.shoppingCartDeleteButtonContainer,
+.McAffeeLogoDiv {
+  align-items: center;
+}
+
+.menuDiv,
+.menuDivBtnContainer,
+.shoppingCartButtonContainer,
+.shoppingCartLoadingContainer,
+.shoppingCartButtonText,
+.shoppingCartDeleteButtonContainer,
+.McAffeeLogoDiv {
+  justify-content: center;
+}
+
+.menuPopupContainer,
+.shoppingCartMainContainer,
+.shoppingCartAddOnsLeftContainer,
+.shoppingCartLoadingContainer,
+.mobileMenuMainContainer,
+.mobileMenuContentContainer,
+.mobileMenuFooterContainer {
+  flex-direction: column;
+}
+
+.logoContainer,
+.mobileMenuMainContainer {
+  justify-content: space-evenly;
+}
+
+.logo {
+  margin-bottom: 0;
+  height: auto;
+}
+
+.menuDiv {
+  min-width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 80px;
+}
+
+.hamburgerIcon {
+  width: 30px;
+  height: auto;
+  margin: 0;
+}
+
+.mainContainer {
+  width: 100%;
+  background-color: white;
+  z-index: 100000;
+  transition: 0.3s;
+}
+
+.menuPopupContainer {
+  position: absolute;
+  top: 80px;
+  background-color: white;
+  width: 200px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-top: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 3px 3px 4px rgb(99, 99, 99, 0.5);
+}
+
+.menuPopupBtn {
+  width: 100%;
+  border-radius: 4px;
+  transition: 0.3s;
+  border: 0;
+  margin-bottom: 14px;
+  background-color: transparent;
+}
+
+.menuPopupBtn:hover {
+  background-color: rgba(33, 30, 94, 0.1);
+}
+
+.menuDivSM {
+  height: 28px;
+  margin-bottom: 16px;
+  padding-left: 10px;
+  width: 95%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menuDivSM:hover {
+  background-color: rgba(33, 30, 94, 0.1);
+  border-radius: 4px;
+}
+
+.menuDivBtnContainer {
+  width: 100%;
+}
+
+.subMenuContainer {
+  padding-top: 11px;
+  padding-left: 35px;
+  padding-bottom: 5px;
+}
+
+.shoppingCartBlackBackground {
+  z-index: 200000;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shoppingCartMainContainer {
+  justify-content: space-between;
+  background-color: white;
+  height: 100%;
+  padding: 2rem;
+}
+
+.shoppingCartHeader {
+  justify-content: space-between;
+}
+
+.shoppingCartCancelButton {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.shoppingCartContent,
+.shoppingCartLoadingContainer {
+  height: 63vh;
+}
+
+.shoppingCartContent {
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
+.shoppingCartAddOnsContainer {
+  justify-content: space-between;
+  border: 1px solid #4e4e4e;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 15px;
+}
+
+.shoppingCartButton {
+  margin: 0.85rem;
+}
+
+.shoppingCartButtonContainer {
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.shoppingCartButtonContainer:hover {
+  background-color: rgba(218, 218, 218, 0.7);
+}
+
+.shoppingCartButtonText {
+  background-color: #ff4d4d;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  position: absolute;
+}
+
+.shoppingCartAddOnsLeftContainer {
+  justify-content: space-between;
+}
+
+.shoppingCartDeleteButtonContainer {
+  border: 1px solid #ff4d4d;
+  border-radius: 5px;
+  padding: 0.2rem;
+  width: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.shoppingCartDeleteButtonContainer:hover {
+  background-color: rgba(218, 218, 218, 0.3);
+  box-shadow: 3px 3px 4px rgba(218, 218, 218, 0.7);
+}
+
+.mobileMenuMainContainer {
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding-left: 11.25%;
+  padding-right: 11.25%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mobileMenuContentContainer {
+  overflow-y: auto;
+  height: 60vh;
+}
+
+.mobileMenuFooterContainer {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media all and (min-width: 1000px) {
+  .logoContainer {
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    height: 80px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .menuContainerLG {
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .menuContainerSM {
+    display: none;
+  }
+
+  .mainContainer {
+    position: fixed;
+  }
+
+  .shoppingCartBlackBackground {
+    position: fixed;
+  }
+
+  .shoppingCartMainContainer {
+    width: 30vw;
+    position: absolute;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .logoContainer {
+    padding-left: 3.125%;
+    padding-right: 3.125%;
+    height: 50px;
+  }
+
+  .logo {
+    width: 83px;
+  }
+
+  .menuContainerSM {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .menuContainerLG {
+    display: none;
+  }
+
+  .shoppingCartBlackBackground {
+    position: absolute;
+    top: 0;
+  }
+
+  .shoppingCartMainContainer {
+    width: 100%;
+  }
+}

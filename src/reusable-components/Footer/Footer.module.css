@@ -1,0 +1,128 @@
+.footerButtonLG {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #211e5e;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.footerLogoLG {
+  width: 135px;
+  height: auto;
+}
+
+.footerLogoSM {
+  width: 128px;
+  height: auto;
+}
+
+.reserveContactContainer {
+  display: flex;
+  padding-left: 8.5%;
+  justify-content: space-between;
+}
+
+.testCLass {
+  padding-top: 56px;
+  padding-bottom: 77px;
+}
+
+.footerContainerSM {
+  padding-top: 20px;
+  padding-bottom: 26px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footerFirstRowSM,
+.footerSecondRowSM {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.footerLogoRowSM {
+  flex-direction: column;
+}
+
+.footerSecondRowSM {
+  margin-bottom: 88px;
+}
+
+.footerFirstRowLeftSM,
+.footerFirstRowRightSM,
+.footerSecondRowLeftSM,
+.footerSecondRowRightSM {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footerLogoSM {
+  margin-bottom: 30px;
+}
+
+.LGlogobtn {
+  display: flex;
+}
+
+.mainContainerLG {
+  display: none;
+}
+
+.footerLastRowSM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.footerButtonContainerSM {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footerContainerLG {
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
+  padding-bottom: 77px;
+  padding-right: 6%;
+}
+
+.footerRowLeftLG,
+.footerRowRightLG,
+.footerInnerRowLG {
+  display: flex;
+  flex: 1;
+}
+
+.footerRowLeftLG,
+.footerInnerRowLG {
+  flex-direction: column;
+}
+
+.footerRowLeftLG {
+  padding-left: 8.5%;
+}
+
+.mainContainerSM {
+  display: none;
+}
+
+@media all and (min-width: 1000px) {
+  .reserveContactContainer {
+    align-items: flex-end;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .LGlogobtn {
+    flex-direction: column;
+  }
+
+  .reserveContactContainer {
+    align-items: flex-start;
+  }
+}

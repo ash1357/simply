@@ -1,0 +1,55 @@
+.brandContainer,
+.logoContainer {
+  display: flex;
+}
+
+.brandContainer {
+  flex-direction: column;
+}
+
+.brandContainer {
+  background-color: white;
+  width: 87%;
+  margin: -95px 0 12px 0;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0px 10px 12px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer {
+  width: 60%;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin: 18px 0;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.logo {
+  height: auto;
+  margin: 0.5rem;
+}
+
+@media all and (min-width: 1000px) {
+  .logo {
+    width: 75px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .brandContainer {
+    margin: -59px 0 12px 0;
+  }
+
+  .brandButton {
+    width: 30%;
+  }
+
+  .logo {
+    width: 40%;
+  }
+}

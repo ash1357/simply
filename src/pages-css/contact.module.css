@@ -1,0 +1,107 @@
+.mainContainer {
+  /* background-image: url(../../content/assets/background.png); */
+  background: linear-gradient(
+    -45deg,
+    rgba(39, 12, 80, 1) 0%,
+    rgba(0, 95, 158, 1) 33%,
+    rgba(68, 196, 164, 1) 70%,
+    rgba(68, 196, 164, 1) 100%
+  );
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 25px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 458px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 110px;
+}
+
+.firstRowContainer {
+  display: flex;
+}
+
+.secondRowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 174.5px;
+  padding-top: 115px;
+}
+
+.secondRowGridContainer {
+  width: 365px;
+  padding-top: 68px;
+  padding-bottom: 57px;
+  padding-left: 38px;
+  padding-right: 32px;
+  background-color: white;
+  border: 1px solid #211e5e;
+  border-radius: 4px;
+  transition: 0.3s;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.secondRowGridContainer:hover {
+  border-top: 6px solid #211e5e;
+  padding-top: 62px;
+  text-decoration: none;
+}
+
+.secondRowGridFirstRow,
+.secondRowGridSecondRow,
+.secondRowGridThirdRow {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+}
+
+.secondRowGridSecondRow {
+  margin-top: 19px;
+  margin-bottom: 53px;
+}
+
+.secondRowGridThirdRow {
+  justify-content: flex-end;
+}
+
+@media all and (min-width: 1000px) {
+  .firstRowContainer {
+    flex-direction: row;
+    padding-left: 29%;
+    padding-right: 29%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .firstRowContainerLeft,
+  .firstRowContainerRight {
+    display: flex;
+    flex: 1;
+  }
+
+  .secondRowGridContainer {
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .firstRowContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 12.5%;
+    padding-right: 30%;
+  }
+
+  .secondRowGridContainer {
+    margin-bottom: 13px;
+  }
+}
